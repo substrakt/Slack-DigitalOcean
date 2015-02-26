@@ -3,6 +3,7 @@ require 'sinatra'
 require 'barge'
 
 post '/restartserver' do
+  verify_token!(params[:token])
   @barge = Barge::Client.new(access_token: ENV['DIGITAL_OCEAN_KEY'])
   if params['text'].nil? or params['text'].empty?
     show_help
@@ -28,4 +29,8 @@ def restart_server(droplet_id)
   else
     "Failed to restart. :confused:"
   end
+end
+
+def verify_token(token)
+  raise ArgumentError unless token.eql?(ENV['SLACK_TOKEN'])
 end
