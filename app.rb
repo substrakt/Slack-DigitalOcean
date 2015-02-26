@@ -31,6 +31,7 @@ def restart_server(droplet_id)
   end
 end
 
-def verify_token(token)
-  raise ArgumentError unless token.eql?(ENV['SLACK_TOKEN'])
+def verify_token!(token)
+  halt(500) if !token.eql?(ENV['SLACK_TOKEN']) || token.blank?
 end
+  
