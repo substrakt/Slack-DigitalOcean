@@ -1,11 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    httparty (0.13.3)
-      json (~> 1.8)
-      multi_xml (>= 0.5.2)
-    json (1.8.2)
-    multi_xml (0.5.5)
+    barge (0.11.0)
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.9)
+      hashie (~> 3.3)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    hashie (3.4.0)
+    multipart-post (2.0.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
@@ -19,5 +24,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
+  barge
   sinatra
