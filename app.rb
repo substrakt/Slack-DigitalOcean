@@ -32,6 +32,6 @@ def restart_server(droplet_id)
 end
 
 def verify_token!(token)
-  halt(500) if !token.eql?(ENV['SLACK_TOKEN']) || token.blank?
+  halt(500) if !token.eql?(ENV['SLACK_TOKEN']) || token.empty?
 end
   
