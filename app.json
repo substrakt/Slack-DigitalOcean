@@ -5,5 +5,15 @@
   "keywords": ["slack", "digitalocean"],
   "logo": "http://substrakt.co.uk/wp-content/themes/substrakt2011/images/logo.svg",
   "website": "http://substrakt.co.uk",
-  "success_url": "https://substrakt.slack.com/services/new/slash-commands"
+  "success_url": "https://substrakt.slack.com/services/new/slash-commands",
+  "env": {
+    "DIGITAL_OCEAN_KEY": {
+      "description": "An access token with read/write access to a DigitalOcean account.",
+      "required": true
+    },
+    "SLACK_TOKEN": {
+      "description": "The slack verification token.",
+      "required": true
+    }
+  }
 }

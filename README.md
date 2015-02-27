@@ -1,0 +1,14 @@
+# /restartserver Slack Command for DigitalOcean
+
+Enables the following commands on Slack.
+
+* `/restartserver [server_id]`
+* `/restartserver`
+
+## Installation
+
+1. Deploy this sinatra app to Heroku. (Don't forget the config vars!)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)]https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fsubstrakt%2FSlack-DigitalOcean]
+
+1. Create a slash command in your Slack integrations for `/restartserver` and point it to the Heroku URL given.
