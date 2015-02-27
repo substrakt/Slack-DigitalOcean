@@ -1,0 +1,6 @@
+{
+  "name": "Slack-DigitalOcean",
+  "description": "A Slack slash command for power cycling DigitalOcean droplets.",
+  "repository": "https://github.com/substrakt/Slack-DigitalOcean",
+  "keywords": ["slack", "digitalocean"]
+}
