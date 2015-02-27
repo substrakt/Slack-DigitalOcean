@@ -3,6 +3,7 @@
   "description": "A Slack slash command for power cycling DigitalOcean droplets.",
   "repository": "https://github.com/substrakt/Slack-DigitalOcean",
   "keywords": ["slack", "digitalocean"],
+  "logo": "http://substrakt.co.uk/wp-content/themes/substrakt2011/images/logo.svg",
   "website": "http://substrakt.co.uk",
   "success_url": "https://substrakt.slack.com/services/new/slash-commands"
 }
