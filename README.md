@@ -16,4 +16,3 @@ Enables the following commands on Slack.
 -----------
 
 Made by [Substrakt](http://substrakt.co.uk)
-![Substrakt Logo](http://substrakt.co.uk/files/2013/04/substrakt-logo1-1024x190.png)
